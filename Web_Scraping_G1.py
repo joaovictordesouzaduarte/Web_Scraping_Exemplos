@@ -53,6 +53,7 @@ print(type(noticias))
 
 # In[142]:
 
+#looping para pegar cada notícia no site;
 
 for noticia in noticias:
     #Titulo
