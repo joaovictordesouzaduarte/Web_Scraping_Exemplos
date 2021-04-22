@@ -72,7 +72,7 @@ for noticia in noticias:
         lista_noticias.append([titulo.text,'', titulo['href']])
     
       
-    
+    #Criando um DataFrame para armazenar as notícias
     news = pd.DataFrame(lista_noticias, columns = ['Title', 'Sub-Title', 'Link'])
     
     news.to_csv('Noticias.csv', index = False)
@@ -80,18 +80,5 @@ for noticia in noticias:
     #print(news)
     
     
-    
-
-
-# In[143]:
-
-
+#Removendo duplicats
 news = news.drop_duplicates()
-news
-
-
-# In[ ]:
-
-
-
-
